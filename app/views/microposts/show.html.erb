@@ -1,0 +1,11 @@
+<h1><%= @post.name %></h1>
+
+<h><%= @post.body %></h></br></br>
+
+
+<%= link_to 'Edit/Add More', {:action => 'edit'},{class: 'button'} %></br></br>
+
+<%= link_to 'Back to Home', {:action => 'index',:user_id => $user},{class: 'button'} %></br>
+
+<p><%= link_to 'New Quote', {:action => 'new',:user_id=> $user},{class: 'button'} %></p>
+

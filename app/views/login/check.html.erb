@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>		
+<body>
+<h1>hai <%= @name %> </h1>
+
+<h1>your loged into your account</h1>
+<%= link_to 'Want to get all Quotes', {:controller =>'microposts',:action => 'index',:user_id => $user},{class: 'button'} %>
+<p></p><%= link_to 'Logout', {:action => 'index'},{class: 'button'} %></p>
+</body>
+</html>
+

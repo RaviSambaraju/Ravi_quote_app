@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 style="text-align: center">Registration  Form</h2>
+<%= form_tag :action => 'create' %>
+<center>
+  <div class="container"> 
+    <label style="float:left !important"><b>name</b></label>
+    <input type="text" placeholder="Enter name" name="name" required>
+    <label style="float:left !important"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required> 
+    <label style="float:left !important"><b>email</b></label> 
+    <input type="text" placeholder="Enter email" name="email" required>
+    <label style="float:left !important"><b>phone</b></label> 
+    <input type="text" placeholder="Enter phone" name="mobile" required>
+    <label style="float:left !important"><b>Age</b></label> 
+    <input type="text" placeholder="Enter age" name="age" required>
+    <label style="float:left !important"><b>Address</b></label> 
+    <input type="text" placeholder="Enter address" name="address" required>       
+    <button type="submit">Register</button>  
+    <%= link_to 'Already Have an Account? Go Back to Login', {:controller =>'login',:action => 'index'} %> 
+  </div> 
+</center>
+
+</body>
+</html>
